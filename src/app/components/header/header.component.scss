@@ -1,0 +1,67 @@
+.header {
+	width: 100%;
+	height: 150px;
+	background-color: #fff;
+}
+
+.header-content {
+	width: 100%;
+	padding-left: 30px;
+	padding-right: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.header-search {
+		width: 120px;
+		color: #9b9b9b;
+	}
+
+	.header-account-block {
+		width: 330px;
+
+		.header-notifications {
+			width: 80px;
+			display: flex;
+			justify-content: space-between;
+
+			img {
+				width: 22px
+			}
+		}
+	}
+}
+
+.header-account {
+	width: 200px;
+
+	.header-profile-picture {
+		width: 70px;
+		height: 70px;
+	}
+
+	.account-name {
+		width: 115px;
+	}
+}
+
+.dropdown1-menu {
+	position: absolute;
+	margin-left: -45px;
+	margin-top: 5px;
+	background-color: rgb(188, 188, 188);
+	border-radius: 5px;
+}
+
+.dropdown-item {
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.dropdown-item:hover {
+	background-color: rgb(93, 93, 93);
+	color:#f0f0f0;
+	transition: 0.3s;
+}

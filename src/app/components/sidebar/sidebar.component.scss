@@ -1,0 +1,150 @@
+$progress-bg-color: #dedede;
+
+* {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
+}
+
+.sidebar {
+	width: 270px;
+	height: 100%;
+	margin: 0;
+	box-shadow: 0 0 10px rgb(202, 202, 202);
+	z-index: 10;
+	transition: 0.3s;
+}
+
+.profile-info {
+	width: 100px;
+	height: 300px;
+}
+
+.profile-pic {
+	width: 100px;
+	height: 100px;
+	background-image: url("../../../assets/imgs/pp.png");
+	z-index: 20;
+}
+
+.user-name {
+	width: 130px;
+
+	.user-name-text {
+		font-size: 17px;
+		font-weight: 500;
+	}
+}
+
+.user-profession {
+	color: #9b9b9b;
+}
+
+.side-top {
+
+	.top-title {
+		font-size: 25px;
+		font-weight: 600;
+	}
+}
+
+.navigation {
+	width: 100%;
+	background-color: #fafafa;
+}
+
+.nav-title {
+	font-size: 17px;
+	font-weight: 500;
+	margin-bottom: 17px;
+}
+
+.nav-item {
+	display: flex;
+	align-items: center;
+}
+
+.nav-item-name {
+	align-items: center;
+	justify-content: center;
+
+
+	img {
+		height: 20px;
+		width: 20px;
+		margin-right: 15px;
+	}
+
+	span {
+		color: #777777;
+	}
+}
+
+.nav-item {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+
+	.nav-notif-1 {
+		width: 20px;
+		height: 20px;
+		border-radius: 10px;
+		background-color: #23b7e5;
+	}
+
+	.nav-notif-2 {
+		width: 20px;
+		height: 20px;
+		background-color: #7165b9;
+	}
+
+	.nav-notif-3 {
+		width: 40px;
+		height: 20px;
+		background-color: #5fd079;
+		border-radius: 10px;
+	}
+
+	.nav-notif-1,
+	.nav-notif-2,
+	.nav-notif-3 {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: white
+	}
+}
+
+.nav-stats,
+.your-stuff {
+	background-color: #fafafa;
+}
+
+.nav-stats-item {
+	margin-bottom: 20px;
+
+	.nav-stats-text {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 10px;
+	}
+
+	.nav-progress {
+		background-color: $progress-bg-color;
+		height: 3px;
+
+		.nav-progress-bar-one {
+			height: 3px;
+			width: 63%;
+			background-color: #23b7e5;
+		}
+
+		.nav-progress-bar-two {
+			height: 3px;
+			width: 38%;
+			background-color: #7165b9;
+		}
+	}
+}

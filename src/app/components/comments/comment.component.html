@@ -1,0 +1,11 @@
+<div class="comment">
+    <img [src]="comment.profilePicPath" alt="">
+    <div class="comment-content">
+        <div class="profile-name">{{ comment.profileName }}</div>
+        <div class="comment-text">{{ comment.commentText }}</div>
+        <div class="comment-additional">
+            <div class="status {{ comment.status | lowercase }}">{{ comment.status }}</div>
+            <div class="date">{{ comment.date }}</div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+<div class="header d-flex align-items-center">
+    <div class="header-content d-flex">
+        <div class="header-search d-flex justify-content-between">
+            <div class="but-hide" onclick="toggleNavbar()">
+                <img src="../../../assets/imgs/icon/list.svg" alt="">
+            </div>
+            <img src="../../../assets/imgs/search.svg" alt="">
+            <div class="search-text">Search...</div>
+        </div>
+        <div class="header-account-block d-flex align-items-center justify-content-between">
+            <div class="header-notifications">
+                <img src="../../../assets/imgs/icons/envelope.svg" alt="">
+                <img src="../../../assets/imgs/icons/bell.svg" alt="">
+            </div>
+            <div class="header-account d-flex justify-content-between">
+                <img src="../../../assets/imgs/pp.png" alt="" class="header-profile-picture d-flex justify-content-between">
+                <div class="account-name d-flex align-items-center justify-content-between">
+                    <div class="account-name-text">Danny Alvis</div>
+                    <div class="dropdown-block">
+                        <button 
+                            class="btn btn-secondary dropdown-toggle bg-transparent text-black" 
+                            type="button" 
+                            aria-haspopup="true" 
+                            aria-expanded="false"
+                            (click)="dropdown = !dropdown"
+                        >
+                        </button>
+                        <div *ngIf="dropdown" class="dropdown1-menu">
+                          <button class="dropdown-item" type="button">Profile</button>
+                          <button class="dropdown-item" type="sumbmit" (click)="onClick()">Logout</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

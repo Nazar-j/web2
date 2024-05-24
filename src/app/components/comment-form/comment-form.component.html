@@ -1,0 +1,9 @@
+<div class="comment-form">
+    <form [formGroup]="commentForm" (ngSubmit)="onSubmit()">
+        <input type="text" formControlName="text" placeholder="Type text..."/>
+        <div *ngIf="commentForm.get('text')?.touched && commentForm.get('text')?.errors?.['required']">
+            Text is required
+        </div>
+        <button type="submit" [disabled]="commentForm.invalid">Post</button>
+      </form>
+  </div>

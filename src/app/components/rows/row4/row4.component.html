@@ -1,0 +1,35 @@
+<div class="row d-flex justify-content-around">
+    <div class="col-6 r4 p-3">
+        <div class="dashboard-title">RECENT COMMENTS</div>
+        <div class="comments d-flex flex-column justify-content-between">
+            <app-comment *ngFor="let comment of comments" [comment]="comment"></app-comment>
+            <app-comment-form></app-comment-form>
+        </div>
+    </div>
+    <div class="col-6 r4 p-3 d-flex flex-column justify-content-between">
+        <div class="r4-1"></div>
+        <div class="messages d-flex flex-column justify-content-between">
+            <div class="message">
+                <img src="../../../../assets/imgs/cc1.png" alt="">
+                <div class="msg-content">
+                    <div class="profile-name">David Warner</div>
+                    <div class="msg-text">What's up. Buddy</div>
+                </div>
+            </div>
+            <div class="message">
+                <img src="../../../../assets/imgs/cc2.png" alt="">
+                <div class="msg-content">
+                    <div class="profile-name">David Warner</div>
+                    <div class="msg-text">What's up. Buddy</div>
+                </div>
+            </div>
+            <div class="message">
+                <img src="../../../../assets/imgs/cc3.png" alt="">
+                <div class="msg-content">
+                    <div class="profile-name">David Warner</div>
+                    <div class="msg-text">What's up. Buddy</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

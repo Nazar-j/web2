@@ -1,0 +1,56 @@
+.comment {
+	display: flex;
+	border: 1px solid #e0e0e0;
+	margin-top: 15px;
+	padding: 10px;
+
+	img {
+		width: 60px;
+		height: 60px;
+		margin-right: 20px;
+	}
+
+	.comment-content {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.profile-name {
+		font-weight: 500;
+		font-size: 17px;
+	}
+
+	.comment-text {
+		color: #777777;
+	}
+
+	.comment-additional {
+		display: flex;
+		justify-content: space-between;
+		margin: 15px 15px 15px 0;
+	}
+
+	.status {
+		height: 30px;
+		width: 100px;
+		border-radius: 15px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #fff;
+	}
+
+	.pending {
+		background-color: #33b1dd;
+	}
+
+	.approved {
+		background-color: #7f69e9;
+	}
+
+	.rejected {
+		background-color: #b3dba1;
+	}
+
+}

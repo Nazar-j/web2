@@ -1,0 +1,9 @@
+<div class="cont">
+    <app-sidebar *ngIf="is_login"></app-sidebar>
+    <div class="content" *ngIf="is_login">
+
+        <app-header></app-header>
+        <app-dashboard></app-dashboard>
+    </div>
+    <app-name-editor *ngIf="!is_login"></app-name-editor>
+</div>
